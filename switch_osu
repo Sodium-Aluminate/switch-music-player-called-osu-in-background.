@@ -1,7 +1,0 @@
-#!/bin/bash
-current=$(xdotool getactivewindow)
-osuWindow=$(xdotool search --onlyvisible --class "osu!"|head -1);
-xdotool windowactivate $osuWindow
-xdotool key F5
-xdotool windowactivate $current
-xdotool windowminimize $osuWindow
