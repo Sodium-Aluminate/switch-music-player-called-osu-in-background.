@@ -1,0 +1,3 @@
+#!/bin/bash
+osuWindow=$(xdotool search --onlyvisible --class "osu!"|head -1);
+xdotool windowactivate $osuWindow
