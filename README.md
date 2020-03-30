@@ -3,12 +3,10 @@
 # 在后台切歌
 
 ## 依赖
-[Lazer](https://github.com/ppy/osu/) + `xdotool`
+- [Lazer](https://github.com/ppy/osu/) + `xdotool`
+- osu has been already started.
 
-## 前提条件
-osu has been already started.
-
-## 使用方法
+## usage
 1. save that file to anywhere, and `chmod +s` it (if your desktop execute this script as other user.)
 2. add a shortkey.
 
