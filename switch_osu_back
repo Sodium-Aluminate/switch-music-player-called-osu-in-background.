@@ -2,6 +2,7 @@
 current=$(xdotool getactivewindow)
 osuWindow=$(xdotool search --onlyvisible --class "osu!"|head -1);
 xdotool windowactivate $osuWindow
+sleep 0.3
 xdotool key F1
 xdotool windowminimize $osuWindow
 xdotool windowactivate $current

@@ -2,6 +2,8 @@
 current=$(xdotool getactivewindow)
 osuWindow=$(xdotool search --onlyvisible --class "osu!"|head -1);
 xdotool windowactivate $osuWindow
+sleep 0.3
+#todo: 找到能让藕酥认为自己在前台的办法, 否则藕酥在切换的瞬间会反应不过来, 需要等待约 0.3 秒(怀疑取决于配置), 大概要么改藕酥(即使后台也可行)要么依赖魔法, 要么直接给藕酥整一个切歌接口...
 xdotool key F5
 xdotool windowminimize $osuWindow
 xdotool windowactivate $current
